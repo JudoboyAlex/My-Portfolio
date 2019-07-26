@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Changa+One|Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://kit.fontawesome.com/3a4c25664c.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -17,29 +30,278 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-143585083-1");
     </script>
 
     <title>Alexander Yang</title>
   </head>
   <body>
-    <div
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
-    >
-      <p>Coming Soon...🐶</p>
+    <header>
+    <div class="intro-container">
+    <div class="intro-frame">
+      <img class="picture" src="assets/myHeadshot.JPG" alt="student_picture" />
+      <p>ALEXANDER YANG</p>
+      <p>Full-Stack Developer</p>
     </div>
+  
+    <nav>
+      <ul class="socialmedia-icons">
+        <li>
+          <a href="mailto: hello@alexyang.ca"
+            ><i class="far fa-envelope fa-lg"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alexander-yang-b54809143/"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/JudoboyAlex"
+            ><i class="fab fa-github-square fa-lg"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/Judoboy/"
+            ><i class="fab fa-codepen fa-lg"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/JudoboyAlex"
+            ><i class="fab fa-twitter-square fa-lg"></i
+          ></a>
+        </li>
+        <li class="dropdown-menu" onclick="myFunction()">
+          <i class="fas fa-bars fa-lg"></i>
+        </li>
+      </ul>
+    </nav>
+    <div id="myLinks">
+      <a href="#about">ABOUT ME</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </div> 
+
+  <div class="intro-wrapper">
+    <div id="intro">
+      <h1>Hi! I am</h1>
+      <p class="rotate-scale-up">Alexander Yang</p>
+      <h3>I'm <span id="typed"></span></h3>
+    </div>
+  </div>
+
+  </header>
+
+    <main>
+    <section id="about" data-aos="fade-up" data-aos-duration="1000">
+      <div class="text-wrapper">
+      <h2>About Me</h2>
+      <p>Hi, I'm Alexander Yang, a web developer based in Toronto.</p>
+
+      <p>
+        I like to create a web site that's simple and easy for users to
+        understand. I always strive to optmize the users experience by
+        delivering the contents that support accessibility and thoroughly
+        testing my code.
+      </p>
+
+      <p>
+        When I'm not coding, I like to practice jiu-jitsu, read latest manga and
+        play hottest video games.
+      </p>
+    </div>
+    </section>
+
+    <section class="porfolio-container" id="portfolio">
+      <h2 data-aos="fade-up" data-aos-duration="1000">My Portfolio</h2>
+      <div
+        class="portfolioItems-one"
+        data-aos="zoom-in-right"
+        data-aos-duration="1000"
+      >
+        <div class="portfolioImages">
+          <img
+            src="./assets/buildme_mockup.jpg"
+            alt="Build Me project screenshot"
+          />
+        </div>
+        <div class="portfolioText">
+          <h3>Build Me</h3>
+          <p><i>Django | React & Redux | REST API | SASS | PostgreSQL</i></p>
+          <p>
+            A group programming project developed with Jesse Moore and Temur
+            Kurbanov. This is full stack app made with Django for backend and
+            React for frontend. Junior developers can apply for web projects
+            owned by business owners to gain valuable industry experience.
+          </p>
+        </div>
+        <div class="portfolio-links">
+          <a
+            class="github-link"
+            href="https://github.com/jessiicacmoore/final-project"
+            target="_blank"
+            >GITHUB</a
+          >
+        </div>
+      </div>
+      <div
+        class="portfolioItems-one"
+        data-aos="zoom-in-left"
+        data-aos-duration="1000"
+      >
+        <div class="portfolioImages">
+          <img
+            src="./assets/crowdfunder_mockup.jpg"
+            alt="Crowdfunder project screenshot"
+          />
+        </div>
+        <div class="portfolioText">
+          <h3>Crowdfunder</h3>
+          <p><i>Django | SQLite</i></p>
+          <p>
+            Pure Django application that mimics kickstarter.com. Made with
+            Jessica Moore and Temur Kurbanov.
+          </p>
+        </div>
+        <div class="portfolio-links">
+          <a
+            class="github-link"
+            href="https://github.com/JudoboyAlex/django_crowdfunder"
+            target="_blank"
+            >GITHUB</a
+          >
+          <a
+            class="live-link"
+            href=" https://djangocrowdfundermaster.herokuapp.com/"
+            target="_blank"
+            >VIEW LIVE</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Skills</h2>
+      <div class="skills-container">
+        <div
+          class="skillItems skillItem1"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <i class="devicon-html5-plain colored"></i>
+          <p>HTML5</p>
+        </div>
+        <div
+          class="skillItems skillItem2"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="devicon-css3-plain colored"></i>
+          <p>CSS3</p>
+        </div>
+        <div
+          class="skillItems skillItem3"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <i class="devicon-javascript-plain colored"></i>
+          <p>JavaScript</p>
+        </div>
+        <div
+          class="skillItems skillItem4"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="devicon-react-original colored"></i>
+          <p>React</p>
+        </div>
+        <div
+          class="skillItems skillItem5"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <i class="devicon-sass-original colored"></i>
+          <p>Sass</p>
+        </div>
+        <div
+          class="skillItems skillItem6"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="devicon-python-plain colored"></i>
+          <p>Python</p>
+        </div>
+        <div
+          class="skillItems skillItem7"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <i class="devicon-django-plain colored"></i>
+          <p>Django</p>
+        </div>
+        <div
+          class="skillItems skillItem8"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="devicon-postgresql-plain colored"></i>
+          <p>PostgreSQL</p>
+        </div>
+        <div
+          class="skillItems skillItem9"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <i class="devicon-github-plain colored"></i>
+          <p>Git/Github</p>
+        </div>
+        <div
+          class="skillItems skillItem10"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="devicon-visualstudio-plain colored"></i>
+          <p>VSCode</p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="contact-form"
+      id="contact"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
+      <h2>Contact</h2>
+      <form action="https://formspree.io/hello@alexyang.ca" method="POST">
+        <label for="name" class="visually-hidden">Your Name</label>
+        <input type="text" name="name" placeholder="Your Name" required />
+
+        <label for="email" class="visually-hidden">Your Email</label>
+        <input type="text" name="email" placeholder="Email" required />
+
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea
+          name="message"
+          placeholder="Send me a message..."
+          rows="8"
+          required
+        ></textarea>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
+  
+    <footer class="footer-container">
+      <p>Copyright © 2019 Alexander G. Yang</p>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

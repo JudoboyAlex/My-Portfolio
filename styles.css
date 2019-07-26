@@ -1,9 +1,291 @@
-body {
-    text-align: center;
-    margin: 10rem auto;
+* {
+  box-sizing: border-box;
 }
 
-p{
-    font-size: 5rem;
-    font-weight: 700;
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  letter-spacing: 0.07rem;
+
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: "Patua One", cursive;
+    color: #333333;
+}
+.intro-container {
+  background: linear-gradient(to right, #000428, #004e92);
+}
+
+.intro-frame {
+  text-align: center;
+  border-bottom: 0.03rem #ffffff solid;
+  font-size: 1.3rem;
+  font-family: "Patua One", cursive;
+  color: #00ffff;
+}
+
+.picture {
+  height: 8rem;
+  border-radius: 100%;
+  border: 0.05rem solid #d3d3d3;
+  margin-top: 2.3rem;
+}
+
+.socialmedia-icons {
+  list-style: none;
+  display: flex;
+  padding-left: 1.5rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 0.03rem #ffffff solid;
+  margin-bottom: 0;
+}
+
+.socialmedia-icons a {
+  color: #dbff3d;
+}
+
+.socialmedia-icons > li {
+  padding: 0.3rem;
+}
+
+.dropdown-menu {
+  margin-left: auto;
+  margin-right: 1.3rem;
+  color: #dbff3d;
+}
+
+#myLinks {
+  display: none;
+  padding-bottom: 1.5rem;
+}
+
+#myLinks a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #00ffff;
+  font-family: "Raleway", sans-serif;
+}
+
+.intro-wrapper {
+  background: linear-gradient(to right, #A1FFCE, #FAFFD1);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+#intro {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+#intro h1 {
+  margin: 0;
+}
+
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+  font-family: "Changa One", cursive;
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.text-wrapper{
+    padding: 0 1.3rem;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 2.5rem;
+
+}
+
+.text-wrapper h2{
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+.porfolio-container{
+    background: linear-gradient(to right, #FFEFBA, #FFFFFF); 
+    padding-top: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 1rem;
+}
+
+.porfolio-container h2{
+    padding-bottom: 2rem;
+}
+
+.portfolioImages {
+  text-align: center;
+}
+
+.portfolioImages img {
+  height: 60%;
+  width: 60%;
+}
+
+.portfolioText {
+  text-align: center;
+  padding: 0 1.3rem;
+}
+
+.portfolio-links {
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+
+.portfolio-links a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  /* transition: 0.4s ease; */
+  background: linear-gradient(
+    to right,
+    rgba(0, 210, 255, 0.4),
+    rgba(32, 164, 243, 0.6),
+    rgba(0, 210, 255, 0.4)
+  );
+  border-radius: 20px;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  width: 5rem;
+  height: 1.7rem;
+  padding: 0.5rem;
+}
+
+#skills {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+  justify-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.skillItems {
+  font-weight: 700;
+}
+
+.skillItems i {
+  font-size: 5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.contact-form {
+  width: 17rem;
+  margin: 0 auto 3rem auto;
+  
+}
+
+.contact-form form {
+  border-radius: 1rem;
+  border: #7FFF00 solid;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #2BC0E4, #EAECC6); 
+  font-family: "Patua One", cursive;
+}
+
+.contact-form form input {
+  width: 100%;
+  border: 0.05rem solid #282c37;
+  cursor: text;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form textarea {
+  width: 100%;
+  border: 0.05rem solid #282c37;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); 
+  margin: 30px auto 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  
+}
+
+.footer-container {
+  text-align: center;
+  background: linear-gradient(to right, #000428, #004e92);
+  color: #ffffff;
+
+}
+
+.footer-container p{
+    margin: 0;  
+    padding: 1rem;
 }
