@@ -17,6 +17,7 @@
     />
 
     <link href="https://fonts.googleapis.com/css?family=Patua+One|Changa+One|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Titillium+Web:900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://kit.fontawesome.com/3a4c25664c.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -84,11 +85,17 @@
     </div>
   </div> 
 
+  <div id="intro">
   <div class="intro-wrapper">
-    <div id="intro">
-      <h1>Hi! I am</h1>
-      <p class="rotate-scale-up">Alexander Yang</p>
-      <h3>I'm <span id="typed"></span></h3>
+    
+      <!-- <h1>Hi! I am</h1> -->
+      <div class="name-wrapper">
+        <h1 class="chrome rotate-scale-up">Alexander Yang</h1>
+        <p class="dreams">Web Developer</p>
+      </div>
+      <!-- <p class="rotate-scale-up">Alexander Yang</p> -->
+      <h3>I'm <span id="typed"></span> </h3>
+      
     </div>
   </div>
 
@@ -96,8 +103,10 @@
 
     <main>
     <section id="about" data-aos="fade-up" data-aos-duration="1000">
+        <h2>About Me</h2>
       <div class="text-wrapper">
-      <h2>About Me</h2>
+       <img src="./assets/Me_in_Action.jpg" alt="me in jiu-jitsu competition"> 
+      <div class="text-contents">
       <p>Hi, I'm Alexander Yang, a web developer based in Toronto.</p>
 
       <p>
@@ -111,6 +120,7 @@
         When I'm not coding, I like to practice jiu-jitsu, read latest manga and
         play hottest video games.
       </p>
+    </div>
     </div>
     </section>
 
@@ -127,6 +137,8 @@
             alt="Build Me project screenshot"
           />
         </div>
+
+        <div class="portfolio-details">
         <div class="portfolioText">
           <h3>Build Me</h3>
           <p><i>Django | React & Redux | REST API | SASS | PostgreSQL</i></p>
@@ -146,8 +158,9 @@
           >
         </div>
       </div>
+      </div>
       <div
-        class="portfolioItems-one"
+        class="portfolioItems-two"
         data-aos="zoom-in-left"
         data-aos-duration="1000"
       >
@@ -157,6 +170,7 @@
             alt="Crowdfunder project screenshot"
           />
         </div>
+        <div class="portfolio-details">
         <div class="portfolioText">
           <h3>Crowdfunder</h3>
           <p><i>Django | SQLite</i></p>
@@ -179,6 +193,7 @@
             >VIEW LIVE</a
           >
         </div>
+      </div>
       </div>
     </section>
     <section id="skills">
@@ -253,7 +268,7 @@
           data-aos="fade-right"
           data-aos-duration="800"
         >
-          <i class="devicon-github-plain colored"></i>
+          <i class="devicon-github-plain"></i>
           <p>Git/Github</p>
         </div>
         <div
