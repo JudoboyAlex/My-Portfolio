@@ -232,10 +232,15 @@ h2 {
   overflow: hidden;
 }
 
+#contact{
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+}
+
 .contact-form {
   width: 17rem;
-  margin: 0 auto 3rem auto;
-  
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 .contact-form form {
