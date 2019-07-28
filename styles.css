@@ -167,8 +167,8 @@ h2 {
 }
 
 .text-wrapper img:hover {
-  -webkit-animation: bounce 1s infinite;
-  animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 .text-wrapper h2{
