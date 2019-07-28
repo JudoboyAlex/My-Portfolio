@@ -166,11 +166,6 @@ h2 {
   border: 0.05rem solid #d3d3d3;
 }
 
-.text-wrapper img:hover {
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
-}
-
 .text-wrapper h2{
     margin-top: 0;
     padding-top: 2rem;
@@ -514,7 +509,10 @@ button {
   color: #ffffff;
 }
 
-
+.text-wrapper img:hover {
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
 
 /* <--- Header Animation Section ---> */
 
