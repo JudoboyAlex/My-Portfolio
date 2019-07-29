@@ -490,6 +490,7 @@ button {
   .portfolioItems-two{
     display: flex;
     padding: 1rem 2rem 5rem 2rem;
+    flex-direction: row-reverse;
   }
 
   .porfolio-container{
