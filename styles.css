@@ -172,6 +172,7 @@ h2 {
 }
 /* <--- End of About Me Section ---> */
 
+
 .porfolio-container{
     /* background: linear-gradient(to right, #FFEFBA, #FFFFFF);  */
     padding-top: 1.5rem;
@@ -242,7 +243,6 @@ h2 {
   font-size: 5rem;
 }
 
-
 h2 {
   text-align: center;
 }
@@ -260,6 +260,47 @@ h2 {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+/* <--- Blog Section ---> */
+
+.blog-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  color: black;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card img{
+  margin: 0 auto;
+}
+
+.card-content{
+  color: #7FFF00;
+  font-family: "Raleway", sans-serif;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a.card{
+  margin-left: 2rem;
+}
+
+.card-container{
+  width: 17rem;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+/* <--- End of Blog Section ---> */
 
 /* #contact{
     background: linear-gradient(to right, #d9a7c7, #fffcdc);
