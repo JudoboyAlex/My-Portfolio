@@ -270,6 +270,45 @@ h2 {
   justify-items: center;
 }
 
+.blog-format{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  max-width: 43rem;
+}
+
+.blog-format h1{
+  font-family: "Patua One", cursive;
+  color: #FF69B4
+}
+
+.blog-format img{
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+.blog-format .vertical-tilt img{
+  width: 30rem;
+  margin: 5rem;
+  transform: rotate(90deg);
+}
+
+.blog-subtitles{
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.blog-subtitles a{
+  color: lawngreen;
+  font-size: 1.5rem;
+  font-family: "Patua One", cursive;
+}
+
+.blog-content{
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+
 .card {
   color: black;
   width: 40%;
@@ -360,39 +399,6 @@ button {
     padding: 1rem;
 }
 
-/* <--- Blog Section ---> */
-.blog-format{
-  margin-top: 5rem;
-  margin-left: 5rem;
-  max-width: 43rem;
-}
-
-.blog-format h1{
-  font-family: "Patua One", cursive;
-  color: #FF69B4
-}
-
-.blog-format img{
-  width: 30rem;
-  margin-left: 5rem;
-}
-
-.blog-subtitles{
-  text-align: right;
-  margin-bottom: 2rem;
-}
-
-.blog-subtitles a{
-  color: lawngreen;
-  font-size: 1.5rem;
-  font-family: "Patua One", cursive;
-}
-
-.blog-content{
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-}
-
 /* <--- Header Animation Section ---> */
 
 .chrome {
@@ -451,6 +457,33 @@ button {
 }
 
 /* <---End of Header Animation Section---> */
+
+/* <---Responsive Design---> */
+@media only screen and (min-width: 360px){
+
+  .blog-container{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem; 
+    justify-items: center; 
+  }
+
+  .blog-format{
+    margin: 5rem 1rem;
+    max-width: 43rem;
+  }
+
+  .blog-format img{
+    width: 20rem;
+    margin: 0
+  }
+  
+  .blog-format .vertical-tilt img{
+    width: 20rem;
+    margin: 1.7rem;
+    transform: rotate(90deg);
+  }
+}
 
 @media only screen and (min-width: 768px){
 
@@ -565,9 +598,28 @@ button {
 
   .porfolio-container{
     background: black;
-    /* padding-top: 1.5rem;
-    font-family: "Raleway", sans-serif;
-    padding-bottom: 1rem; */
+}
+
+.blog-format{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  max-width: 43rem;
+}
+
+.blog-format h1{
+  font-family: "Patua One", cursive;
+  color: #FF69B4
+}
+
+.blog-format img{
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+.blog-format .vertical-tilt img{
+  width: 30rem;
+  margin: 5rem;
+  transform: rotate(90deg);
 }
 
 #contact{
