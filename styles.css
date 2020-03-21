@@ -606,11 +606,6 @@ button {
   max-width: 43rem;
 }
 
-.blog-format h1{
-  font-family: "Patua One", cursive;
-  color: #FF69B4
-}
-
 .blog-format img{
   width: 30rem;
   margin-left: 5rem;
@@ -620,6 +615,14 @@ button {
   width: 30rem;
   margin: 5rem;
   transform: rotate(90deg);
+}
+
+.blog-container{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem; 
+  justify-items: center; 
+}
 }
 
 #contact{
