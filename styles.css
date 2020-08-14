@@ -205,7 +205,7 @@ h2 {
 }
 
 .portfolio-links {
-  margin: 1rem auto 3rem;
+  margin: 2rem auto 3rem;
   text-align: center;
 }
 
@@ -220,6 +220,7 @@ h2 {
   width: 5rem;
   height: 1.7rem;
   padding: 0.5rem;
+  margin: 1rem;
 }
 
 #skills {
@@ -596,9 +597,15 @@ button {
     flex-direction: row-reverse;
   }
 
+  .portfolioItems-three{
+    display: flex;
+    padding: 1rem 2rem 5rem 2rem;
+    flex-direction: row-reverse;
+  }
+
   .porfolio-container{
     background: black;
-}
+ }
 
 .blog-format{
   margin-top: 5rem;
