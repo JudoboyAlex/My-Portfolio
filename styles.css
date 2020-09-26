@@ -43,6 +43,10 @@ h2 {
   margin-top: 2.3rem;
 }
 
+.badge {
+  width: 90%;
+}
+
 .socialmedia-icons {
   list-style: none;
   display: flex;
