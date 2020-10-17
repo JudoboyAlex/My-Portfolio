@@ -608,6 +608,11 @@ button {
     flex-direction: row-reverse;
   }
 
+  .portfolioItems-four{
+    display: flex;
+    padding: 3rem 2rem 1rem 2rem;
+  }
+
   .porfolio-container{
     background: black;
  }
