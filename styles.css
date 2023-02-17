@@ -345,6 +345,11 @@ a.card{
   padding-bottom: 3rem;
   padding-top: 1rem;
 }
+
+.badge-img {
+  width: 220px;
+  height: 220px;
+}
 /* <--- End of Blog Section ---> */
 
 .contact-form {
